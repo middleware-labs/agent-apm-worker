@@ -1,0 +1,16 @@
+{
+  "name": "@middleware.io/agent-apm-worker",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "middleware.io",
+  "license": "ISC",
+  "dependencies": {
+    "@opentelemetry/api": "^1.4.0",
+    "@opentelemetry/resources": "^1.9.1",
+    "opentelemetry-sdk-workers": "^0.4.0"
+  }
+}
