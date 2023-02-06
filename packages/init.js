@@ -2,7 +2,7 @@ let config;
 import "opentelemetry-sdk-workers/performance";
 import { WorkersSDK } from "opentelemetry-sdk-workers";
 import { OTLPProtoTraceExporter } from "opentelemetry-sdk-workers/exporters/OTLPProtoTraceExporter";
-import { OTLPProtoLogExporter } from "opentelemetry-sdk-workers/exporters/OTLPProtoLogExporter";
+import { OTLPJsonLogExporter } from "opentelemetry-sdk-workers/exporters/OTLPJsonLogExporter";
 import { Resource } from '@opentelemetry/resources';
 
 module.exports.init = (newConfig = {}) => {
@@ -26,7 +26,7 @@ module.exports.track = (request,ctx) => {
         traceExporter: new OTLPProtoTraceExporter({
             url: config.target
         }),
-        logExporter: new OTLPProtoLogExporter({
+        logExporter: new OTLPJsonLogExporter({
             url: config.target
         }),
         resource
