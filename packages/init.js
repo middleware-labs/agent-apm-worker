@@ -27,7 +27,8 @@ module.exports.track = (request,ctx) => {
             url: config.target
         }),
         logExporter: new OTLPJsonLogExporter({
-            url: config.target
+            url: config.target,
+            headers:{origin: 'localhost' }
         }),
         resource
     });
