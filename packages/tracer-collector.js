@@ -1,8 +1,8 @@
 module.exports.init =  (config) => {
 
-    import "opentelemetry-sdk-workers/performance";
-    const { WorkersSDK } = require("opentelemetry-sdk-workers");
-    const { OTLPProtoTraceExporter } = require("opentelemetry-sdk-workers/exporters/OTLPProtoTraceExporter");
+    import "@middleware.io/opentelemetry-sdk-workers/performance";
+    const { WorkersSDK } = require("@middleware.io/opentelemetry-sdk-workers");
+    const { OTLPProtoTraceExporter } = require("@middleware.io/opentelemetry-sdk-workers/exporters/OTLPProtoTraceExporter");
     const { Resource } = require('@opentelemetry/resources');
 
 
