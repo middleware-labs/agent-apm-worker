@@ -22,6 +22,7 @@ module.exports.track = (request,ctx) => {
         ['mw.account_key']:config['accountKey'],
     })
     const sdk = new WorkersSDK(request, ctx, {
+        service: "worker",
         traceExporter: new OTLPProtoTraceExporter({
             url: config.target
         }),
