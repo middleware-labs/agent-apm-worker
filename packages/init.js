@@ -1,7 +1,7 @@
 let config;
-import "opentelemetry-sdk-workers/performance";
-import { WorkersSDK, OTLPJsonLogExporter } from "opentelemetry-sdk-workers";
-import { OTLPProtoTraceExporter } from "opentelemetry-sdk-workers/exporters/OTLPProtoTraceExporter";
+import "@middleware.io/opentelemetry-sdk-workers/performance";
+import { WorkersSDK, OTLPJsonLogExporter } from "@middleware.io/opentelemetry-sdk-workers";
+import { OTLPProtoTraceExporter } from "@middleware.io/opentelemetry-sdk-workers/exporters/OTLPProtoTraceExporter";
 import { Resource } from '@opentelemetry/resources';
 
 module.exports.init = (newConfig = {}) => {
