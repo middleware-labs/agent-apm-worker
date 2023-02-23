@@ -29,7 +29,8 @@ module.exports.track = (request,ctx) => {
             url: config.target+'/v1/logs'
             headers:{origin: 'localhost' }
         }),
-        resource
+        resource,
+        consoleLogEnabled:config['consoleLogEnabled']
     });
     return sdk;
 };

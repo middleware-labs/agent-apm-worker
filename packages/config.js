@@ -2,8 +2,9 @@ const {diag, DiagConsoleLogger, DiagLogLevel} = require('@opentelemetry/api');
 
 const configDefault = {
     'DEBUG' : DiagLogLevel.NONE,
-    'projectName':"Default-Project-",
-    'serviceName':"Default-Service-",
+    'projectName':"Default-Worker-Project",
+    'serviceName':"Default-Worker-Service",
+    'consoleLogEnabled':false,
     'accountKey':"",
     'target':''
 }
