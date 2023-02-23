@@ -23,10 +23,10 @@ module.exports.track = (request,ctx) => {
     })
     const sdk = new WorkersSDK(request, ctx, {
         traceExporter: new OTLPProtoTraceExporter({
-            url: config.target
+            url: config.target+'/v1/traces'
         }),
         logExporter: new OTLPJsonLogExporter({
-            url: config.target,
+            url: config.target+'/v1/logs'
             headers:{origin: 'localhost' }
         }),
         resource
