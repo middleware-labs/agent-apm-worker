@@ -1,6 +1,6 @@
 {
   "name": "@middleware.io/agent-apm-worker",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,8 @@
   "author": "middleware.io",
   "license": "ISC",
   "dependencies": {
-    "@middleware.io/opentelemetry-sdk-workers": "^0.6.17",
+    "@middleware.io/opentelemetry-sdk-workers": "^0.6.19",
     "@opentelemetry/api": "^1.4.0",
-    "@opentelemetry/resources": "^1.9.1",
-    "opentelemetry-sdk-workers": "^0.6.2"
+    "@opentelemetry/resources": "^1.9.1"
   }
 }
