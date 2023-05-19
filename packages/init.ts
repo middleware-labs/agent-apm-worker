@@ -20,6 +20,8 @@ module.exports.track = (request,ctx) => {
         ['project.name']:config['projectName'],
         ['service.name']:config['serviceName'],
         ['mw.account_key']:config['accountKey'],
+        ['mw_serverless']: true,
+        ['mw_source']: "cloudflare-worker",
     })
     const sdk = new WorkersSDK(request, ctx, {
         service: config['serviceName'],

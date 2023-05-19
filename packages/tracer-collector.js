@@ -31,6 +31,8 @@ module.exports.init =  (config) => {
             [SemanticResourceAttributes.SERVICE_NAME]: config.serviceName,
             ['mw_agent']: true,
             ['project.name']:config.projectName,
+            ['mw_serverless']: true,
+            ['mw_source']: "cloudflare-worker", 
         }))
         sdk.start()
             .then(() => {})

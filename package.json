@@ -1,6 +1,7 @@
 {
   "name": "@middleware.io/agent-apm-worker",
-  "version": "0.0.20",
+  "version": "0.0.22",
+  "releaseNotes": "Version 0.0.22\n- Added Cloudflare specific attributes",
   "description": "",
   "main": "index.js",
   "scripts": {
