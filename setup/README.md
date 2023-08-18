@@ -10,14 +10,14 @@ npm i @middleware.io/agent-apm-worker
 
 ### Step 2 : Import Tracker
 ```javascript
-import * as tracker from "@middleware.io/agent-apm-worker";
+import { init,track } from '@middleware.io/agent-apm-worker';
 ```
 
 ### Step 3 : Initialize Tracker with your Middleare API key  
 
 Add this snippet given below and replace the required details.
 ```typescript
-tracker.init({
+init({
     projectName:"{APM-PROJECT-NAME}",
     serviceName:"{APM-SERVICE-NAME}",
     accountKey:"{ACCOUNT_KEY}",
@@ -28,6 +28,6 @@ tracker.init({
 ### Step 4 : Track all the requests with middleware SDK
 
 ```typescript		
-const sdk = tracker.track(request, ctx);
+const sdk = track(request, ctx);
 return sdk.sendResponse(response);
 ```
