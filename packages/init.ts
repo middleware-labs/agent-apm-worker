@@ -1,3 +1,4 @@
+require("@middleware.io/opentelemetry-sdk-workers/performance");
 const { WorkersSDK,OTLPJsonLogExporter } = require("@middleware.io/opentelemetry-sdk-workers");
 const { OTLPProtoTraceExporter } = require("@middleware.io/opentelemetry-sdk-workers/exporters/OTLPProtoTraceExporter");
 const { Resource } = require("@opentelemetry/resources");
